@@ -5,6 +5,8 @@ node_modules
 /tests/e2e/videos/
 /tests/e2e/screenshots/
 
+coverage
+
 # local env files
 .env.local
 .env.*.local
@@ -23,3 +25,4 @@ yarn-error.log*
 *.sln
 *.sw?
 package-lock.json
+.nyc_output/out.json
