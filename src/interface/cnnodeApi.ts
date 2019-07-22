@@ -1,26 +1,26 @@
 export interface cnnodeResponse {
   success: boolean,
-  data: [] | any
+  data: [] | any,
 }
 
 export interface cnnodeTopics {
-  topics: Array<cnnodeTopicsItem>
+  topics: Array<cnnodeTopicsItem>,
 }
 
 export interface cnnodeTopicsItem {
   id: string,
-  author_id: string,
+  authorId: string,
   tab: string,
   content: string,
   title: string,
-  last_reply_at: string,
+  lastReplyAt: string,
   good: boolean,
   top: boolean,
-  reply_count: number,
-  visit_count: number,
-  create_at: string,
+  replyCount: number,
+  visitCount: number,
+  createAt: string,
   author: {
     loginname: string,
-    avatar_url: string
-  }
+    avatarUrl: string,
+  },
 }

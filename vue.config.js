@@ -6,9 +6,9 @@ module.exports = {
         target: 'https://cnodejs.org/api/v1',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': ''
-        }
-      }
-    }
-  }
-}
+          '^/api': '',
+        },
+      },
+    },
+  },
+};

@@ -1,3 +1,7 @@
-import request from '@/api/base/base'
+import request from '@/api/base/base';
 
-export const getTopics = ():Promise<any> => request.get('/api/topics').then(data => data.data.data)
+const getTopics = ():Promise<any> => request.get('/api/topics').then(data => data.data.data);
+
+export {
+  getTopics,
+};

@@ -8,6 +8,8 @@ describe('My First Test', () => {
 
   it('Visits test url', () => {
     cy.visit('#/test');
-    cy.url().should('include', 'test')
+    cy.url().should('include', 'test');
+
+    cy.get('[data-cy=demo-style-header]').should('have.text', 'this is demo component');
   });
 });

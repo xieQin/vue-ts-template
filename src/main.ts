@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import App from '@/App.tsx';
+import App from '@/App';
 import router from '@/router/index';
 import store from '@/store/index';
 

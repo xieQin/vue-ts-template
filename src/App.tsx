@@ -2,7 +2,7 @@ import { Vue, Component } from 'vue-property-decorator';
 
 @Component({})
 export default class App extends Vue {
-  render () {
+  render() {
     return (
       <div id="app">
         <h1>Welcome to Your Vue.js + TypeScript App</h1>
@@ -12,6 +12,6 @@ export default class App extends Vue {
         </div>
         <router-view/>
       </div>
-    )
+    );
   }
 }

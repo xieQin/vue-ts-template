@@ -1,5 +1,5 @@
 export default [{
   path: '/test',
   name: 'test',
-  component: () => import('@/views/demo/Test')
-}]
+  component: () => import('@/views/demo/Test'),
+}];
