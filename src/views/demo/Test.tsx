@@ -26,7 +26,14 @@ export default class Test extends Vue {
     return (
       <div>
         Hello Test Components
-        <demo text="this is demo component"></demo>
+        <demo text="this is demo component">
+          <div slot="demo">
+            <p>11111</p>
+          </div>
+          <div slot="test">
+            <h3>222222</h3>
+          </div>
+        </demo>
       </div>
     );
   }

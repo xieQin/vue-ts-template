@@ -17,7 +17,15 @@ export default class Demo extends Vue {
     this.count -= 1;
   }
 
-  render() {
+  render(createElement:any) {
+    const slots = []
+    for (let item in this.$slots) {
+      const slotNode = createElement(
+        'div',
+        this.$slots[item]
+      )
+      slots.push(slotNode)
+    }
     const {
       text,
       count,
@@ -26,6 +34,7 @@ export default class Demo extends Vue {
       <div>
         <div class="demo-style" data-cy="demo-style-header">
           {text}
+          {slots}
         </div>
         <div class="demo-style" data-cy="demo-count">{count}</div>
         <button class="btn-style" data-cy="demo-btn-add" onClick={this.addCount}>add</button>
