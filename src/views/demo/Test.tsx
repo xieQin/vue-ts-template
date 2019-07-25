@@ -21,6 +21,7 @@ export default class Test extends Vue {
   async mounted() {
     await this.getTopics();
   }
+  private text:string = 'text'
 
   render() {
     return (
@@ -29,6 +30,7 @@ export default class Test extends Vue {
         <demo text="this is demo component">
           <div slot="demo">
             <p>11111</p>
+            {this.text}
           </div>
           <div slot="test">
             <h3>222222</h3>
