@@ -17,10 +17,40 @@ export default class Test extends Vue {
   @Action(type.GET__TOPICS) getTopics!: getTopics;
 
   @Getter('topics') topics!: Array<cnnodeTopicsItem>;
+  
+  async beforeCreate() {
+    console.log('beforeCreate')
+  }
+
+  async created() {
+    console.log('created')
+  }
+
+  async beforeMount() {
+    console.log('beforeMount')
+  }
 
   async mounted() {
+    console.log('mounted')
     await this.getTopics();
   }
+
+  async beforeUpdate () {
+    console.log('beforeUpdate')
+  }
+
+  async updated () {
+    console.log('updated')
+  }
+
+  async beforeUDestory () {
+    console.log('beforeUDestory')
+  }
+
+  async destroyed () {
+    console.log('destroyed')
+  }
+
   private text:string = 'text'
 
   render() {
